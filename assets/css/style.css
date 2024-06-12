@@ -18,7 +18,8 @@ img {
   max-width: 100%;
 }
 
-html {
+html p {
+  font-family: work, Arial, Helvetica, sans-serif;
 }
 
 /* ! header */
@@ -50,7 +51,6 @@ header section {
 }
 
 header p {
-  font-family: work, Arial, Helvetica, sans-serif;
   font-size: 12px;
   margin-bottom: 10px;
 }
@@ -109,7 +109,6 @@ nav {
 }
 
 .statistics p {
-  font-family: work, Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
@@ -139,7 +138,6 @@ nav {
 }
 
 .paragraph {
-  font-family: work, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 2rem;
   width: 95%;
@@ -166,7 +164,7 @@ nav {
 
 #imgs_right img:nth-of-type(2) {
   width: 60%;
-padding-bottom: 100px;
+  padding-bottom: 100px;
 
   align-self: flex-end;
 }
@@ -216,5 +214,59 @@ padding-bottom: 100px;
 
 #thsirt_imgs_right img:nth-of-type(2) {
   width: 70%;
-margin: 0 0 -50px -200px;
+  margin: 0 0 -50px -200px;
+  /* z-index: 1; */
+}
+
+/* Golden Bear section */
+
+.golden_bear {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 1;
+  position: relative;
+  padding: 160px 100px 0 100px;
+  gap: 100px;
+}
+
+.golden_bear article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.golden_bear article p {
+  font-size: 20px;
+}
+
+.golden_bear article h2 {
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-size: 5.1rem;
+  width: 40%;
+  line-height: 4.5rem;
+}
+
+.golden_bear h3 {
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.golden_bear > div {
+    /* position:relative; */
+}
+
+.bear_imgs {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 0 0 -200px 0;
+  position: absolute;
+}
+
+
+.bear_imgs:last-child {
+    margin-left: 0;
+    position: relative;
 }
