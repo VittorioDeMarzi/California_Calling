@@ -23,19 +23,30 @@ html {
 
 /* ! header */
 
+header div {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header div img {
+  height: 100%;
+  width: 10px;
+}
+
 header {
   background-color: black;
   color: white;
   height: 100vh;
   padding: 0 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% auto auto;
 }
 
 header section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90%;
 }
 
 header p {
@@ -50,7 +61,6 @@ h1 {
 }
 
 h1:nth-of-type(1) {
-  /* line-height: 30px; */
   margin-bottom: -30px;
 }
 
@@ -95,7 +105,6 @@ nav {
 .statistics {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: flex-end;
 }
 
@@ -121,6 +130,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 100px 0 100px 0;
 }
 
 .stuck h2 {
@@ -128,7 +138,7 @@ nav {
   font-size: 5.1rem;
 }
 
-.stuck p {
+.paragraph {
   font-family: work, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 2rem;
@@ -156,12 +166,55 @@ nav {
 
 #imgs_right img:nth-of-type(2) {
   width: 60%;
+padding-bottom: 100px;
+
   align-self: flex-end;
 }
 
 /* our T-shirt */
 
 .our_tshirt {
-    display: grid;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 35% 1fr;
+}
 
+.our_tshirt p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 300px;
+  margin-bottom: 150px;
+}
+
+#thsirt_imgs_left {
+  display: flex;
+  flex-direction: column;
+}
+
+#thsirt_imgs_left img:nth-of-type(1) {
+  width: 60%;
+  margin-left: 250px;
+}
+
+#thsirt_imgs_left img:nth-of-type(2) {
+  width: 50%;
+  margin-top: 150px;
+}
+
+#thsirt_imgs_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#thsirt_imgs_right img:nth-of-type(1) {
+  width: 65%;
+  margin-left: -100px;
+  margin-top: 100px;
+}
+
+#thsirt_imgs_right img:nth-of-type(2) {
+  width: 70%;
+margin: 0 0 -50px -200px;
 }
