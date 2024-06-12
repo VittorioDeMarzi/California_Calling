@@ -1,0 +1,77 @@
+@font-face {
+    font-family: inter;
+    src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: work;
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+
+}
+
+/* ! header */
+
+header {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    padding: 0 100px;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+header p {
+    font-family: work, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+h1:nth-of-type(1) {
+    /* line-height: 30px; */
+    margin-bottom: -22px;
+}
+
+h1:nth-of-type(2) {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+
