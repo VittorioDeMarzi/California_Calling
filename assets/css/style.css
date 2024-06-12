@@ -1,77 +1,119 @@
 @font-face {
-    font-family: inter;
-    src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: inter;
+  src: url(../font/Inter-VariableFont_slnt\wght.ttf);
 }
 
 @font-face {
-    font-family: work;
-    src: url(../font/WorkSans-VariableFont_wght.ttf);
+  font-family: work;
+  src: url(../font/WorkSans-VariableFont_wght.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 html {
-
 }
 
 /* ! header */
 
 header {
-    background-color: black;
-    color: white;
-    height: 100vh;
-    padding: 0 100px;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  padding: 0 100px;
 }
 
 header section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
 }
 
 header p {
-    font-family: work, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    margin-bottom: 10px;
+  font-family: work, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 h1 {
-    font-family: inter, Arial, Helvetica, sans-serif;
-    font-size: 50px;
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-size: 64px;
 }
 
 h1:nth-of-type(1) {
-    /* line-height: 30px; */
-    margin-bottom: -22px;
+  /* line-height: 30px; */
+  margin-bottom: -30px;
 }
 
 h1:nth-of-type(2) {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: black;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .btn {
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
 }
+
+/* ! main */
+/* history */
+
+.history {
+  background-color: black;
+  color: white;
+  font-family: inter, Arial, Helvetica, sans-serif;
+  padding: 120px 0 100px 100px;
+}
+
+.history > h2 {
+    font-size: 100px;
+}
+
+.history article {
+  /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-end;
+}
+
+.statistics p {
+    font-family: work, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.statistics h2 {
+    font-family: work, Arial, Helvetica, sans-serif;
+    font-size: 86px;
+}
+
+
+
 
 
