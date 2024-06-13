@@ -81,6 +81,7 @@ nav {
 }
 
 .btn {
+    font-size: 2rem;
   border: 1px solid white;
   color: white;
   text-decoration: none;
@@ -235,11 +236,10 @@ nav {
   position: relative;
   padding: 160px 100px 0 100px;
   gap: 100px;
-  height: 150vh;
 }
 
 .bear_section p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .bear_section article {
@@ -326,12 +326,55 @@ nav {
 footer {
   background: black;
   color: white;
-  height: 500px;
+  /* height: 500px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
+  width: 100vw;
+  row-gap: 40px;
+  padding: 100px 0 100px 100px;
 }
 
+.join_us {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+.join_us h3 {
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  line-height: 4.5rem;
+}
+
+.bottom {
+  grid-column: 1/3;
+  /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+footer img {
+  height: 20px;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.social_media a {
+    padding: 5px;
+}
 
 /* running date animation */
 
@@ -344,13 +387,14 @@ footer {
   background-color: white;
   height: 100px;
   width: 1500px;
+  margin-left: -500px;
 }
 
 #date {
   font-size: 6rem;
   animation: move_date 8s linear infinite alternate;
   color: black;
-  width: 1800px;
+  width: 1500px;
 }
 
 @keyframes move_date {
