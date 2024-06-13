@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -51,13 +55,13 @@ header section {
 }
 
 header p {
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
 h1 {
   font-family: inter, Arial, Helvetica, sans-serif;
-  font-size: 64px;
+  font-size: 6.4rem;
 }
 
 h1:nth-of-type(1) {
@@ -94,7 +98,7 @@ nav {
 }
 
 .history > h2 {
-  font-size: 100px;
+  font-size: 10rem;
 }
 
 .history article {
@@ -109,17 +113,18 @@ nav {
 }
 
 .statistics p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .statistics h2 {
   font-family: work, Arial, Helvetica, sans-serif;
-  font-size: 86px;
+  font-size: 8.6rem;
 }
 
 /* stuck in the middle section*/
 
 .stuck {
+  background-color: rgb(238, 238, 238);
   display: grid;
   grid-template-columns: 1fr 35% 1fr;
   height: 100vh;
@@ -134,13 +139,13 @@ nav {
 
 .stuck h2 {
   font-family: inter, Arial, Helvetica, sans-serif;
-  font-size: 5.1rem;
+  font-size: 8.2rem;
 }
 
 .paragraph {
-  font-size: 1rem;
-  line-height: 2rem;
-  width: 95%;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  width: 97%;
 }
 
 .stuck div:nth-child(1) {
@@ -172,6 +177,7 @@ nav {
 /* our T-shirt */
 
 .our_tshirt {
+  background-color: rgb(238, 238, 238);
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 35% 1fr;
@@ -220,7 +226,7 @@ nav {
 
 /* Golden Bear section */
 
-.golden_bear {
+.bear_section {
   background-color: black;
   color: white;
   display: grid;
@@ -229,32 +235,33 @@ nav {
   position: relative;
   padding: 160px 100px 0 100px;
   gap: 100px;
+  height: 150vh;
 }
 
-.golden_bear article {
+.bear_section p {
+    margin-bottom: 30px;
+}
+
+.bear_section article {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.golden_bear article p {
-  font-size: 20px;
+.bear_section article p {
+  font-size: 2rem;
 }
 
-.golden_bear article h2 {
+.bear_section article h2 {
   font-family: inter, Arial, Helvetica, sans-serif;
-  font-size: 5.1rem;
+  font-size: 8.3rem;
   width: 40%;
-  line-height: 4.5rem;
+  line-height: 8rem;
 }
 
-.golden_bear h3 {
+.bear_section h3 {
   font-family: inter, Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 3.3rem;
   margin-bottom: 15px;
-}
-
-.golden_bear > div {
-    /* position:relative; */
 }
 
 .bear_imgs {
@@ -262,11 +269,95 @@ nav {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   margin: 0 0 -200px 0;
-  position: absolute;
+}
+
+.bear_imgs img:nth-of-type(2) {
+  margin-left: -100px;
+}
+
+/* image animation  */
+
+.animation img {
+  height: 50vh;
+  animation: rotationImage 5s linear infinite;
+  position: relative;
+  top: -100px;
+  right: -100px;
+}
+
+.animation {
+  text-align: right;
+  overflow: hidden;
+}
+
+@keyframes rotationImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* poppy bear section */
+
+.poppy_bear {
+  background-color: rgb(238, 238, 238);
+  color: black;
+  margin-bottom: 250px;
+}
+
+.poppy_bear .bear_imgs {
+  grid-template-columns: 1fr 2fr;
+  margin: 0 0 -200px 0;
+}
+
+.poppy_bear .bear_imgs img:nth-of-type(1) {
+  margin-left: 100px;
+  z-index: 1;
+}
+
+.poppy_bear .bear_imgs img:nth-of-type(2) {
+  margin-left: 0px;
+}
+
+/* ! footer */
+
+footer {
+  background: black;
+  color: white;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
 
-.bear_imgs:last-child {
-    margin-left: 0;
-    position: relative;
+/* running date animation */
+
+.date_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: rotate(45deg);
+  background-color: white;
+  height: 100px;
+  width: 1500px;
+}
+
+#date {
+  font-size: 6rem;
+  animation: move_date 8s linear infinite alternate;
+  color: black;
+  width: 1800px;
+}
+
+@keyframes move_date {
+  from {
+    transform: translateX(40%);
+  }
+  to {
+    transform: translateX(-20%);
+  }
 }
