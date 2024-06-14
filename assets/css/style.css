@@ -716,4 +716,21 @@ footer span {
       transform: translateX(10%);
     }
   }
+
+  /* Extra small devices (phones, 600px and down) */
+
+  @media only screen and (max-width: 600px) {
+    .history {
+      /* padding-left: 80px; */
+      padding-bottom: 100px;
+      height: auto;
+    }
+    .stuck {
+      grid-template-rows: 0.5fr 1fr 2fr;
+    }
+
+    .join_us h3 {
+      width: 80vw;
+    }
+  }
 }
