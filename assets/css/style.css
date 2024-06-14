@@ -220,6 +220,7 @@ nav {
 #thsirt_imgs_right img:nth-of-type(2) {
   width: 70%;
   margin: 0 0 -50px -200px;
+  z-index: 4;
 }
 
 /* Golden Bear section */
@@ -384,7 +385,7 @@ footer img {
 
 #date {
   font-size: 7rem;
-  animation: move_date 8s linear infinite alternate;
+  animation: move_date 3s linear infinite alternate;
   color: black;
   width: 1500px;
 }
@@ -397,10 +398,10 @@ footer span {
 
 @keyframes move_date {
   from {
-    transform: translateX(20%);
+    transform: translateX(30%);
   }
   to {
-    transform: translateX(-0%);
+    transform: translateX(40%);
   }
 }
 
@@ -547,17 +548,16 @@ footer span {
   }
 
   .stuck h2 {
-    font-family: inter, Arial, Helvetica, sans-serif;
     font-size: 4rem;
   }
 
   .stuck {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
     text-align: center;
-    height: 100vh;
+    height: auto;
     padding: 0 10px 0px 10px;
+    gap: 70px;
   }
 
   .stuck div:nth-of-type(1) img {
@@ -566,11 +566,10 @@ footer span {
   }
 
   .stuck article {
-    margin: 30px 0;
+    margin: 0px 0;
   }
 
   #imgs_right {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -586,7 +585,130 @@ footer span {
     width: 60%;
     padding-bottom: 0px;
     margin-left: -150px;
-    margin-top: -50px;
+    margin-top: 50px;
     align-self: center;
+  }
+
+  .our_tshirt {
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 0 10px 0px 10px;
+    gap: 70px;
+  }
+
+  .our_tshirt p {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #thsirt_imgs_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #thsirt_imgs_left img:nth-of-type(1) {
+    width: 90%;
+    margin-left: 0px;
+    margin-top: -100px;
+  }
+
+  #thsirt_imgs_left img:nth-of-type(2) {
+    width: 90%;
+    margin-top: -50px;
+  }
+
+  #thsirt_imgs_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #thsirt_imgs_right img:nth-of-type(1) {
+    width: 95%;
+    margin-left: 50px;
+    margin-bottom: -50px;
+    z-index: 2;
+  }
+
+  #thsirt_imgs_right img:nth-of-type(2) {
+    width: 90%;
+    margin: -30px -10px 0px auto;
+  }
+
+  /* Golden Bear section */
+
+  .bear_section article {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .bear_section article h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .bear_section {
+    grid-template-columns: 1fr;
+    padding: 100px 30px 0 30px;
+    gap: 50px;
+  }
+
+  .bear_imgs {
+    margin: 0 0 -100px 0;
+  }
+
+  .poppy_bear .bear_imgs {
+    margin: 0 0 -100px 0;
+  }
+  .poppy_bear {
+    margin-bottom: 150px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    row-gap: 40px;
+    padding: 50px 30px 30px 30px;
+  }
+
+  .join_us h3 {
+    width: 90vw;
+  }
+
+  .join_us {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .bottom {
+    grid-column: 1/2;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+  }
+
+  .date_box {
+    transform: rotate(0deg);
+    height: 120px;
+    width: 170vw;
+    margin-left: -50px;
+  }
+
+  #date {
+    font-size: 5rem;
+    animation: move_date 3s linear infinite alternate;
+    width: 170vw;
+  }
+
+  @keyframes move_date {
+    from {
+      transform: translateX(-40%);
+    }
+    to {
+      transform: translateX(10%);
+    }
   }
 }
