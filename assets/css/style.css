@@ -693,14 +693,14 @@ footer span {
   .date_box {
     transform: rotate(0deg);
     height: 120px;
-    width: 170vw;
+    width: 200vw;
     margin-left: -50px;
   }
 
   #date {
     font-size: 5rem;
     animation: move_date 6s linear infinite alternate;
-    width: 170vw;
+    width: 200vw;
   }
 
   @keyframes move_date {
