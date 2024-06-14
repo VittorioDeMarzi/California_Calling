@@ -699,7 +699,7 @@ footer span {
 
   #date {
     font-size: 5rem;
-    animation: move_date 3s linear infinite alternate;
+    animation: move_date 6s linear infinite alternate;
     width: 170vw;
   }
 
